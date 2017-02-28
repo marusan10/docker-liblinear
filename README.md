@@ -17,12 +17,12 @@ A Library for Large Linear Classification
     train
 
     ``` sh
-    $ docker run --rm -v $(pwd):/data marusan10/liblinear train test01.data test01.model
+    $ docker run --rm -v $PWD:/data marusan10/liblinear train test01.data test01.model
     ```
 
     predict
 
     ``` sh
-    $ docker run --rm -v $(pwd):/data marusan10/liblinear predict test01.data test01.model test01.predict
+    $ docker run --rm -v $PWD:/data marusan10/liblinear predict test01.data test01.model test01.predict
     ```
 
