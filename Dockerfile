@@ -5,7 +5,7 @@ RUN apk add --update --no-cache --virtual=.liblinear-deps \
         libstdc++ \
         libgomp \
         libatomic \
-    && apk add --update --no-cache --virtual=.liblinear-dev-deps \
+    && apk add --update --no-cache --virtual=.liblinear-build-deps \
         make \
         g++ \
         gcc \
@@ -17,7 +17,7 @@ RUN apk add --update --no-cache --virtual=.liblinear-deps \
     && make all \
     && ln -s /usr/local/src/liblinear/train /usr/local/bin/train \
     && ln -s /usr/local/src/liblinear/predict /usr/local/bin/predict \
-    && apk del .liblinear-dev-deps
+    && apk del .liblinear-build-deps
 
 WORKDIR /data
 
