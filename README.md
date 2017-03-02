@@ -1,3 +1,8 @@
+# Supported tags and respective `Dockerfile` links
+
+- `latest` (Dockerfile)
+- `multicore` (multicore/Dockerfile)
+
 # What is liblinear?
 
 A Library for Large Linear Classification
