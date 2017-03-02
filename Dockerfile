@@ -3,6 +3,8 @@ FROM alpine
 RUN apk add --update --no-cache --virtual=.liblinear-deps \
         libgcc \
         libstdc++ \
+        libgomp \
+        libatomic \
     && apk add --update --no-cache --virtual=.liblinear-dev-deps \
         make \
         g++ \
